@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link para WhatsApp Gerado - PixelCru</title>
+    <meta name="keywords" content="Gerador de Link WhatsApp, Criar Link WhatsApp, Gerar Link Personalizado WhatsApp, Link Direto para WhatsApp, Ferramenta de Link WhatsApp, Gerador de Mensagem WhatsApp, Criador de Link para WhatsApp, Link para Conversa WhatsApp, Criar URL para WhatsApp, Gerar URL WhatsApp, Link de Mensagem WhatsApp, Gerador de Link para Mensagens, WhatsApp Link Generator, Personalizar Link WhatsApp, Link de Contato WhatsApp">
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS externo -->
+</head>
+<body>
+    <div class="result-container">
+        <h1>Seu link:</h1>
+        <h2>Clique no link (para abrir o WhatsApp)</h2>
+        <a id="whatsappLink" class="result-link" href="#" target="_blank">Abrir WhatsApp</a>
+        <a href="index.html" class="back-button">Gerar novo link</a>
+    </div>
+
+    <script>
+        // Obtém o link da URL usando hash
+        const hash = window.location.hash.substring(1);
+        const link = decodeURIComponent(hash);
+
+        // Define o link no elemento
+        document.getElementById('whatsappLink').href = link;
+        document.getElementById('whatsappLink').textContent = link;
+    </script>
+</body>
+</html> 

@@ -1,0 +1,150 @@
+/* Importa as fontes Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #141212; /* Cor de fundo da página */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Efeito de vidro semi-transparente */
+    backdrop-filter: blur(12px); /* Desfoque do fundo */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto; /* Garante que a caixa esteja centralizada */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza todos os itens horizontalmente */
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+    background: linear-gradient(-80deg, #496fa0, #d18b5c); /* Gradiente aplicado ao texto */
+    -webkit-background-clip: text; /* Aplicar o gradiente ao texto */
+    background-clip: text; /* Versão padrão */
+    color: transparent; /* Torna o texto transparente para mostrar o gradiente */
+    letter-spacing: -0.5pt; /* Espaçamento negativo entre as letras em pt */
+    line-height: calc(1em - 1px); /* Espaçamento entre linhas ajustado para menos 1px */
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 300px; /* Ajusta o tamanho máximo das caixas */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; /* Centraliza o texto dentro dos campos */
+    font-size: 18px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+button {
+    width: 100%;
+    max-width: 300px; /* Ajusta o tamanho máximo do botão */
+    padding: 10px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+}
+
+button:hover {
+    background-color: #20b358;
+    transform: scale(1.05);
+}
+
+
+.container,
+.result-container {
+    background: rgba(255, 255, 255, 0.1); /* Mantém a cor de fundo bem transparente */
+    backdrop-filter: blur(20px) saturate(180%); /* Aumenta o desfoque e adiciona saturação para um efeito mais realista */
+    -webkit-backdrop-filter: blur(20px) saturate(180%); /* Adiciona suporte para Safari */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Adiciona uma borda leve para o efeito de vidro */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Ajusta a sombra para um efeito mais sutil */
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto; /* Garante que a caixa esteja centralizada */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza todos os itens horizontalmente */
+}
+
+.result-link {
+    display: block;
+    padding: 15px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.result-link:hover {
+    background-color: #20b358;
+}
+
+.back-button {
+    display: block;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+  
